@@ -53,7 +53,7 @@ fun PriceChange(
             tint = contentColor
         )
         Text(
-            text = "${change.formatted} %",
+            text = "${if(change.value >= 0) " " else ""}${change.formatted} %",
             color = contentColor,
             fontSize = 16.sp,
             fontWeight = FontWeight.Light
